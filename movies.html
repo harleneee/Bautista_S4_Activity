@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Showing - Our Cinema</title>
+    <link rel="stylesheet" href="moviesstyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Our Cinema</h1>
+            <nav>
+                <a href="Session4_Activity.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="movies.html">Movies</a>
+                <a href="contacts.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="movies">
+        <div class="container">
+            <h2>Now Showing</h2>
+
+            <div class="movie">
+                <img src="https://preview.redd.it/john-wick-chapter-5-fan-movie-poster-v0-rg4kd3l27rbb1.png?width=3189&format=png&auto=webp&s=265c27f907e2fe8d060b37a2e32f7f43c46827a5" alt="Movie 1 Poster">
+                <div class="movie-info">
+                    <h3>John Wick 5: From The Grave</h3>
+                    <p>After being mistakenly resurrected by a bumbling group of occult enthusiasts, John Wick is caught in a supernatural mix-up where he must navigate the afterlife's bureaucracy while dealing with clueless angels, mischievous demons, and quirky ghosts.
+                    </p>
+                    <p>Showtimes: 1:00 PM, 4:00 PM, 7:00 PM</p>
+                    <button class="buy-button" onclick="showBookingForm('John Wick 5: From The Grave')">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjE4NTA1NzExN15BMl5BanBnXkFtZTYwNjc3MjM3._V1_FMjpg_UX1000_.jpg" alt="Movie 2 Poster">
+                <div class="movie-info">
+                    <h3>How To Lose A Guy In 10 Days</h3>
+                    <p>A romantic comedy film that revolves around Andie Anderson, a journalist played by Kate Hudson, who is tasked with writing an article on how to make a man fall in love and then promptly break up with her in just ten days. Simultaneously, Benjamin Barry, an advertising executive played by Matthew McConaughey, makes a bet that he can make any woman fall in love with him within the same timeframe.
+                    </p>
+                    <p>Showtimes: 2:30 PM, 5:30 PM, 8:30 PM</p>
+                    <button class="buy-button" onclick="showBookingForm('How To Loose A Guy In 10 Days')">Buy Tickets</button>
+                    
+
+                </div>
+            </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+            <div id="booking-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="hideBookingForm()">&times;</span>
+                    <h2 id="movie-title"></h2>
+                    <form>
+                        <label for="date">Select Date:</label>
+                        <input type="date" id="date" name="date" required><br><br>
+                        <label for="time">Select Time:</label>
+                        <input type="time" id="time" name="time" required><br><br>
+                        <input type="submit" value="Book Tickets">
+                    </form>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Our Cinema. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
